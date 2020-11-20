@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Currency Conversion App</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="point">.</string>
+    <string name="_0">0</string>
+    <string name="del"><![CDATA[<-]]></string>
+    <string name="unit">Choose unit:</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+
+    <string-array name="measures">
+        <item>CURRENCY</item>
+        <item>DISTANCE</item>
+        <item>WEIGHT</item>
+    </string-array>
+
+    <string-array name="currencies">
+        <item>BYN</item>
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
+
+    <string-array name="currencies2">
+        <item>USD</item>
+        <item>BYN</item>
+        <item>EUR</item>
+    </string-array>
+
+    <string-array name="Distance">
+        <item>METER</item>
+        <item>FOOT</item>
+        <item>YARD</item>
+        <item>INCH</item>
+    </string-array>
+
+    <string-array name="Distance2">
+        <item>FOOT</item>
+        <item>YARD</item>
+        <item>METER</item>
+        <item>INCH</item>
+    </string-array>
+
+    <string-array name="Weight">
+        <item>OZ</item>
+        <item>LB</item>
+        <item>G</item>
+    </string-array>
+
+    <string-array name="Weight2">
+        <item>LB</item>
+        <item>G</item>
+        <item>OZ</item>
+    </string-array>
+
+    <string name="BYNBYN">1</string>
+    <string name="BYNUSD">0.39</string>
+    <string name="BYNEUR">0.33</string>
+    <string name="USDBYN">2.57</string>
+    <string name="USDEUR">0.84</string>
+    <string name="USDUSD">1</string>
+    <string name="EURBYN">3.04</string>
+    <string name="EURUSD">1.18</string>
+    <string name="EUREUR">1</string>
+
+    <string name="INCHINCH">1</string>
+    <string name="INCHFOOT">0.083</string>
+    <string name="INCHYARD">0.028</string>
+    <string name="INCHMETER">0.0254</string>
+    <string name="FOOTINCH">12</string>
+    <string name="FOOTFOOT">1</string>
+    <string name="FOOTYARD">0.33</string>
+    <string name="FOOTMETER">0.3048</string>
+    <string name="YARDINCH">36</string>
+    <string name="YARDFOOT">3</string>
+    <string name="YARDYARD">1</string>
+    <string name="YARDMETER">0.9144</string>
+    <string name="METERINCH">39.3701</string>
+    <string name="METERFOOT">3.28</string>
+    <string name="METERYARD">1.09361</string>
+    <string name="METERMETER">1</string>
+
+    <string name="OZOZ">1</string>
+    <string name="OZLB">0.063</string>
+    <string name="OZG">28.35</string>
+    <string name="LBOZ">16</string>
+    <string name="LBG">453.59</string>
+    <string name="LBLB">1</string>
+    <string name="GLB">0.035</string>
+    <string name="GOZ">0.0022</string>
+    <string name="GG">1</string>
+
+</resources>
+
+

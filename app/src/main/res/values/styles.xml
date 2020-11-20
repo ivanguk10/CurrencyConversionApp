@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Keyboard">
+        <item name="android:textSize">20sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:layout_gravity">fill</item>
+        <!--<item name="android:bottomRightRadius">12dp</item>
+        <item name="android:bottomLeftRadius">12dp</item>
+        <item name="android:topRightRadius">12dp</item>
+        <item name="android:topLeftRadius">12dp</item>-->
+    </style>
+</resources>
