@@ -51,22 +51,4 @@ class KeyboardFragment : Fragment() {
         return binding.root
     }
 
-
-
-//    private val viewModel by viewModels<MainViewModel>()
-//
-//    private lateinit var Button1: Button
-//    private lateinit var Button2: Button
-//    private lateinit var Button3: Button
-//    private lateinit var Button4: Button
-//    private lateinit var Button5: Button
-//    private lateinit var Button6: Button
-//    private lateinit var Button7: Button
-//    private lateinit var Button8: Button
-//    private lateinit var Button9: Button
-//    private lateinit var Button0: Button
-//    private lateinit var ButtonPoint: Button
-//    private lateinit var ButtonDel: Button
-
-
 }

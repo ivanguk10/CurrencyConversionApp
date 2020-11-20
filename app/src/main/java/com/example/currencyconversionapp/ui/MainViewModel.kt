@@ -47,7 +47,6 @@ class MainViewModel(): ViewModel() {
         }
         Log.i("valueFrom", _valFrom.value!!)
         Log.i("valueTo", _valTo.value!!)
-        //return _valFrom.value.toString()
     }
 
     fun addNumb(numb: String) {
@@ -86,34 +85,11 @@ class MainViewModel(): ViewModel() {
             2 -> {
                 val clipData: ClipData = ClipData.newPlainText("text", _valTo.value)
                 clipboardManager.setPrimaryClip(clipData)
-                //Log.i("copy", clipdata)
             }
 
         }
-        //Toast.makeText(getAp,"The copy was successful", Toast.LENGTH_LONG).show()
 
     }
 
-//    fun addDot() {
-//        if (!_valFrom.value?.contains(".")!!) {
-//            _valFrom.value.toString()
-//            _valFrom.value = _valFrom.value + "."
-//        }
-//    }
-
-
-//        if (_valFrom.value != null && _valFrom.value!! > 0.toString()){
-//            _valFrom.value = _valFrom.value!!.substring(0, _valFrom.value!!.length - 1)
-//            convertedField()
-//        }
-//        return _valFrom.value.toString()
-//        if (_valFrom.value?.length!! <= 1) {
-//            clear()
-//        }
-//        else {
-//            _valFrom.value = (_valFrom.value!!.length - 1).toString()
-//            convertField()
-//        }
-//    }
 
 }

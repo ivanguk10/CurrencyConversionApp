@@ -65,8 +65,6 @@ class DataFragment : Fragment() {
             binding.spinnerChooseUnit.adapter = adapter
 
         }
-//        binding.spinnerFrom.onItemSelectedListener
-//        binding.spinnerTo.onItemSelectedListener
 
 
 
@@ -77,7 +75,6 @@ class DataFragment : Fragment() {
                 position: Int,
                 l: Long
             ) {
-//                if (adapterView == binding.spinnerChooseUnit) {
                     val measures: String = adapterView?.getItemAtPosition(position).toString()
                 if (adapterView != null) {
                     Toast.makeText(adapterView.context, measures, Toast.LENGTH_SHORT).show()
@@ -106,11 +103,8 @@ class DataFragment : Fragment() {
                     ).also { adapterFrom ->
                         adapterFrom.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
                         binding.spinnerFrom.adapter = adapterFrom
-                        //binding.spinnerFrom.onItemSelectedListener
                     }
 
-//                    adapterTo = ArrayAdapter(requireActivity(),android.R.layout.simple_list_item_1, mesTo )
-//                    binding.spinnerTo.adapter = adapterTo
                     ArrayAdapter.createFromResource(
                         requireActivity(),
                         mesTo,
@@ -118,7 +112,6 @@ class DataFragment : Fragment() {
                     ).also { adapterTo ->
                         adapterTo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
                         binding.spinnerTo.adapter = adapterTo
-                        //binding.spinnerTo.onItemSelectedListener
                     }
             }
 
@@ -129,7 +122,6 @@ class DataFragment : Fragment() {
 
         binding.spinnerFrom.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-                //Toast.makeText(adapterView.context, "hello", Toast.LENGTH_SHORT).show()
                 val temp: String = binding.spinnerFrom.selectedItem.toString() +
                         binding.spinnerTo.selectedItem.toString()
                 Log.e("test", temp)
@@ -147,7 +139,6 @@ class DataFragment : Fragment() {
 
         binding.spinnerTo.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-                //Toast.makeText(adapterView.context, "hello", Toast.LENGTH_SHORT).show()
                 val temp: String = binding.spinnerFrom.selectedItem.toString() +
                         binding.spinnerTo.selectedItem.toString()
                 Log.e("test", temp)
@@ -166,51 +157,6 @@ class DataFragment : Fragment() {
 
         return binding.root
     }
-
-//    fun onItemSelectedListener(adapterView: AdapterView<*>, view: View, position: Int, l: Long) {
-//        if (adapterView == spinner_chooseUnit) {
-//            val measures: String = adapterView.getItemAtPosition(position).toString()
-//            Toast.makeText(adapterView.context, measures, Toast.LENGTH_SHORT).show()
-//            var mesFrom = 0
-//            var mesTo = 0
-//            when (measures) {
-//                "CURRENCY" -> {
-//                    mesFrom = R.array.currencies
-//                    mesTo = R.array.currencies2
-//                }
-//                "WEIGHT" -> {
-//                    mesFrom = R.array.weight
-//                    mesTo = R.array.weight2
-//                }
-//                "DISTANCE" -> {
-//                    mesFrom = R.array.distance
-//                    mesTo = R.array.distance2
-//                }
-//            }
-//            ArrayAdapter.createFromResource(
-//                requireActivity(),
-//                mesFrom,
-//                android.R.layout.simple_spinner_item
-//            ).also { adapterFrom ->
-//                adapterFrom.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-//                //binding.spinnerFrom.adapter = adapterFrom
-//                //binding.spinnerFrom.onItemSelectedListener
-//            }
-//            ArrayAdapter.createFromResource(
-//                requireActivity(),
-//                mesTo,
-//                android.R.layout.simple_spinner_item
-//            ).also { adapterTo ->
-//                adapterTo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-//                //binding.spinnerTo.adapter = adapterTo
-//                //binding.spinnerTo.onItemSelectedListener
-//            }
-//        }
-//    }
-
-
-
-
 }
 
 
